@@ -21,7 +21,7 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
       //$ldate=date('d/m/Y h:i:s', time());
       if($rs)
       {//if its sucessfull
-        header("location:admin-dashboard.php");
+        header("location:admin/admin-dashboard.php");
       }
 
       else
