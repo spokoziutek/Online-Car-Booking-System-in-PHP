@@ -1,10 +1,10 @@
 <!--Server Side Scripting To inject Login-->
 <?php
-  //session_start();
+  session_start();
   include('vendor/inc/config.php');
-  //include('vendor/inc/checklogin.php');
-  //check_login();
-  //$aid=$_SESSION['a_id'];
+  include('vendor/inc/checklogin.php');
+  check_login();
+  $aid=$_SESSION['a_id'];
   //Add USer
   if(isset($_POST['add_user']))
     {
