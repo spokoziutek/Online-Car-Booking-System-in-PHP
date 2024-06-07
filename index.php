@@ -1,21 +1,6 @@
-<?php
-  session_start();
-  include('admin/vendor/inc/config.php');
-  //include('vendor/inc/checklogin.php');
-  //check_login();
-  //$aid=$_SESSION['a_id'];
-?>
-<!DOCTYPE html>
-<html lang="en">
-<!--Head-->
-<?php include("vendor/inc/head.php");?>
+
 
 <body>
-
-    <!-- Navigation -->
-    <?php include("vendor/inc/nav.php");?>
-    <!--End Navigation-->
-
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -115,16 +100,6 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         <h1 class="my-4">Client Testimonials</h1>
 
         <div class="row">
-            <?php
-
-      $ret="SELECT * FROM tms_feedback where f_status ='Published' ORDER BY RAND() LIMIT 3 "; //get all feedbacks
-      $stmt= $mysqli->prepare($ret) ;
-      $stmt->execute() ;//ok
-      $res=$stmt->get_result();
-      $cnt=1;
-      while($row=$res->fetch_object())
-    {
-    ?>
             <!-- Author By: MH RONY
     Author Website: https://developerrony.com
     Github Link: https://github.com/dev-mhrony
@@ -138,14 +113,12 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                     </div>
                 </div>
             </div>
-            <?php }?>
         </div>
 
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <?php include("vendor/inc/footer.php");?>
     <!--.Footer-->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
