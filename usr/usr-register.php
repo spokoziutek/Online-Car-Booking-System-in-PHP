@@ -8,6 +8,10 @@
   session_start();
   include('vendor/inc/config.php');
   include('vendor/inc/checklogin.php');
+
+  check_login();
+  $aid=$_SESSION['a_id'];
+
   //Add USer
   if(isset($_POST['submit']))
     {
