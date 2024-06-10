@@ -1,4 +1,3 @@
-<!--Server Side Scripting To inject Login-->
 <?php
 
   // Włącz wyświetlanie błędów (dla celów debugowania)
