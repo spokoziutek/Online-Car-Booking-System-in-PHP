@@ -1,6 +1,6 @@
 <?php
             $aid=$_SESSION['u_id'];
-            $ret="select * from tms_user where u_id=?";
+            $ret="SELECT u_id from tms_user where u_id=?";
             $stmt= $mysqli->prepare($ret) ;
             $stmt->bind_param('i',$aid);
             $stmt->execute() ;//ok
