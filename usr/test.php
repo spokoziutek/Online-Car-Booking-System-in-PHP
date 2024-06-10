@@ -9,6 +9,8 @@ session_start();
 
 // Połączenie z bazą danych
 include('vendor/inc/config.php');
+include('vendor/inc/checklogin.php');
+check_login();
 
 // Sprawdź, czy formularz został przesłany
 if (isset($_POST['submit'])) {
