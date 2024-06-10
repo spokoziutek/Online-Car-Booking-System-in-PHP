@@ -11,7 +11,7 @@
   check_login();
   $aid=$_SESSION['a_id'];
   //Add USer
-  if(isset($_POST['add_user']))
+  if(isset($_POST['submit']))
     {
 
             $u_fname=$_POST['u_fname'];
@@ -160,7 +160,7 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                             </div>
                         </div>
                     </div>
-                    <button type="submit" name="add_user" class="btn btn-success">Create Account</button>
+                    <button type="submit" name="submit" class="btn btn-success">Create Account</button>
                 </form>
                 <!--End FOrm-->
                 <div class="text-center">
