@@ -22,7 +22,7 @@
             $u_email=$_POST['u_email'];
             $u_pwd=$_POST['u_pwd'];
             $u_category=$_POST['u_category'];
-            $query="INSERT into `tms_user` (u_fname, u_lname, u_phone, u_addr, u_category, u_email, u_pwd) values(?,?,?,?,?,?,?)";
+            $query="INSERT into tms_user (u_fname, u_lname, u_phone, u_addr, u_category, u_email, u_pwd) values(?,?,?,?,?,?,?)";
             $stmt = $mysqli->prepare($query);
             $rc=$stmt->bind_param('sssssss', $u_fname,  $u_lname, $u_phone, $u_addr, $u_category, $u_email, $u_pwd);
             
